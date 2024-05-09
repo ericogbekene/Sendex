@@ -1,0 +1,94 @@
+div.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.logo {
+    font-size: 80px;
+    text-align: center;
+    margin: 80px 0 20px;
+}
+
+p.login_text {
+    color: #4f4f4f;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+input[type="text"], input[type="password"]{
+    display: block;
+    width: 350px;
+    height: 35px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 1px solid #bdbdbd;
+}
+
+.button {
+    background: linear-gradient(to right, #ed7525, #cf3b7f);
+    width: 350px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    color: #fff;
+    border: none;
+}
+
+p.forgot_pwd {
+    text-align: center;
+    margin-bottom: 70px;
+}
+
+div.create_acct {
+    display: flex;
+    flex-direction: column;
+}
+
+div.create_acct p {
+    text-align: center;
+}
+
+div.create_acct button {
+    background-color: transparent;
+    text-align: center;
+    padding: 10px 30px;
+    border-color: #cf3b7f;
+    color: #4f4f4f;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+@media (min-width: 720px) {
+    input[type="text"], input[type="password"] {
+        width: 500px;
+    }
+    .button {
+        width: 500px;
+    }
+    div.create_acct {
+        flex-direction: row;
+        justify-content: center;
+    }
+    div.create_acct p {
+        margin: 10px 50px 0 0;
+    }
+}
+
+@media (max-width: 320px) {
+    input[type="text"], input[type="password"] {
+        width: 300px;
+    }
+    p.login_text {
+        text-align: center;
+}
+    .button {
+        width: 300px;
+    }
+    div.create_acct button {
+        width: 300px;
+}
+}
+
+
