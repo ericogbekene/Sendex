@@ -1,0 +1,36 @@
+{
+  "login": [
+    {
+      "id": "1",
+      "email": "eli3@gmail.com",
+      "password": 1234
+    },
+    {
+      "id": "e72f",
+      "email": "jjjjj@d"
+    },
+    {
+      "id": "d96c",
+      "email": "eli2@gmail.com"
+    },
+    {
+      "id": "b4c9",
+      "email": "hi@s"
+    },
+    {
+      "id": "300d",
+      "email": "s@d",
+      "password": "22"
+    },
+    {
+      "id": "3347",
+      "email": "sss@g",
+      "password": "444"
+    },
+    {
+      "id": "462c",
+      "email": "jjj@3",
+      "password": "ewww"
+    }
+  ]
+}

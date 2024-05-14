@@ -8,7 +8,7 @@ function Login() {
             <p className="create_acct_logo">Create an Account</p>
             <form>
                 <input type="text" placeholder="Your Name" />
-                <input type="text" placeholder="Your Email" />
+                <input type="email" placeholder="Your Email" />
                 <input type="password" placeholder="Create Password" />
                 <input type="password" placeholder="Repeat Password" />
                 <input id="checkbox" type="checkbox"/><label for="checkbox">I agree to all statements in <span>Terms and Services</span></label>
