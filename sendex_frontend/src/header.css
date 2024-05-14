@@ -1,0 +1,37 @@
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Header-left{
+    color: aqua;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.header-mid{
+    flex: 1;
+    justify-content: flex-end;
+    color: blue;
+    margin: 5px;
+    padding: 10px;
+
+}
+
+.nav-list{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: brown;
+    
+}
+
+.nav-list li{
+    text-decoration: none;
+    padding: 10px;
+    margin: 10px;
+    color: white;
+
+}

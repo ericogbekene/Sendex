@@ -8,6 +8,11 @@ function Login() {
         navigate("/register");
     }
 
+    const handleLogin = () => {
+        //try post request to login endpoint
+
+    }
+
   return (
     <div className="home login">
         <div>
@@ -17,7 +22,7 @@ function Login() {
                 <input type="text" placeholder="Username" />
                 <input type="password" placeholder="Password" />
             </form>
-            <button className="button" >LOG IN</button>
+            <button className="button" onClick={handleLogin}>LOG IN</button>
             <p className="forgot_pwd login_text ">Forgot password?</p>
             <div className="create_acct">
                 <p className="login_text">Don't have an account?</p>
