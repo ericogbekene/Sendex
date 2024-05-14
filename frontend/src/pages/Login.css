@@ -16,7 +16,7 @@ p.login_text {
     margin-bottom: 15px;
 }
 
-input[type="text"], input[type="password"]{
+input[type="text"], input[type="email"], input[type="password"]{
     display: block;
     width: 350px;
     height: 35px;
@@ -61,7 +61,7 @@ div.create_acct button {
 }
 
 @media (min-width: 720px) {
-    input[type="text"], input[type="password"] {
+    input[type="text"], input[type="email"], input[type="password"] {
         width: 500px;
     }
     .button {
@@ -77,7 +77,7 @@ div.create_acct button {
 }
 
 @media (max-width: 320px) {
-    input[type="text"], input[type="password"] {
+    input[type="text"], input[type="email"],  input[type="password"] {
         width: 300px;
     }
     p.login_text {
