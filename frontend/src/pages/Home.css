@@ -81,6 +81,35 @@ button {
     color: #fff;
 }
 
+/* Featured section */
+
+.section-heading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.section-heading .feature-section {
+    text-align: center;
+}
+.grid-gallery {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+}
+
+/* Cta Section */
+
+.cta-wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    gap: 5px;
+}
 
 /* FOOTER */
 
