@@ -13,7 +13,7 @@ function Header() {
     <nav>
     <ul className='nav-list'>
     <li className='logo'>Sendex</li>
-    <li className='Home'>Home</li>
+    <li className='Home' >Home</li>
     <li className='About'>About</li>
     <li className='Contact'>Contact-Us</li>
     </ul>

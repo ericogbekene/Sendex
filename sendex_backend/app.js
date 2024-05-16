@@ -5,7 +5,7 @@ const config = require("./utils/config"); //Gives us access to the port number a
 const express = require('express');
 const app = express()
 const loginRouter = require("./controllers/login");
-const ordersRouter = require("./routes/order");
+const ordersRouter = require("./controllers/order");
 const cors = require('cors');
 const mongoose = require('mongoose');
 
