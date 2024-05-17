@@ -6,8 +6,10 @@ const express = require('express');
 const app = express()
 const loginRouter = require("./controllers/login");
 const ordersRouter = require("./controllers/order");
+const reviewsRoute = require("./controllers/review");
 const cors = require('cors');
 const mongoose = require('mongoose');
+const swaggerSetup = require('./swagger');
 
 mongoose.set('strictQuery', false)
 
@@ -24,6 +26,7 @@ mongoose.connect(config.MONGO_URI)
 
 const baseUrl = "/api/login"
 const ordersUrl = "/api/orders"
+const reviewUrl = "/api/reviews"
 
 // Middleware
 app.use(cors())
@@ -32,6 +35,10 @@ app.use(express.json())
 app.use(express.static("dist"))
 app.use(baseUrl, loginRouter)
 app.use(ordersUrl, ordersRouter)
+app.use(reviewUrl, reviewsRoute);
+
+// setup Swagger for api documentation
+swaggerSetup(app);
 
 
 /* Load environment variables

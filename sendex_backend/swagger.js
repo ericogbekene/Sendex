@@ -3,7 +3,7 @@ const swaggerUi = require('swagger-ui-express')
 
 const options = {
   swaggerDefinition: {
-    restapi: '3.0.0',
+    openapi: '3.0.0',
     info: {
       title: 'My API',
       version: '1.0.0',
@@ -17,7 +17,7 @@ const options = {
       },
     ],
   },
-  apis: ['/*.js'],
+  apis: ['./controllers/*.js'],
 }
 
 const specs = swaggerJsdoc(options)
