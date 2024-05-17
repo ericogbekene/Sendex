@@ -1,0 +1,15 @@
+
+GET http://localhost:3001/api/orders HTTP/1.1
+
+###
+
+POST http://localhost:3001/api/orders
+Content-Type: application/json
+
+{
+    "user_id": "66540f62e90c72cfd7c3246a",
+    "description": "Buy Ice cream",
+    "location": "Kabala West, Kaduna",
+    "budget": 400,
+    "status": "pending"
+}

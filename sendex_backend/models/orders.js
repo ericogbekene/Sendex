@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
 const orderSchema = new mongoose.Schema({
-  user: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
+  user_id: { type: mongoose.Schema.Types.ObjectId, ref: 'User', required: true },
   description: {
     type: String,
     required: true,
@@ -19,7 +19,8 @@ const orderSchema = new mongoose.Schema({
     enum: ['pending', 'accepted', 'in progress', 'completed'],
     default: 'pending',
   },
-  partner: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
+  //partner: { type: mongoose.Schema.Types.ObjectId, ref: 'User' },
 });
 
 module.exports = mongoose.model('Order', orderSchema);
+// should be changed to "Order" as the name of the object.

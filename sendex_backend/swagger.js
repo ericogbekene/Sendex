@@ -9,10 +9,11 @@ const options = {
       version: '1.0.0',
       description: 'My REST API',
       // insert documentation for endpoints here
+      
     },
     servers: [
       {
-        url: 'http://localhost:3000',
+        url: 'http://localhost:3001',
       },
     ],
   },

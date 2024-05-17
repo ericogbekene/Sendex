@@ -4,24 +4,17 @@ const express = require('express');
 const router = express.Router();
 const Order = require('../models/orders');
 
-// This will help us connect to the database
-
-//const db = require("../server/db/conn.js");
-
-
-// This help convert the id from string to ObjectId for the _id.
-//import { ObjectId } from "mongodb";
-//const mongodb = require("mongodb");
 
 
 // GET /api/orders
 router.get('/', async (req, res) => {
   try {
     // Find all orders in the database
-    const Order = await Order.find();
+    const getAllOrders = await Order.find();
+    console.log(getAllOrders);
 
     // Return success response with orders
-    res.status(200).json(Order);
+    res.status(200).json(getAllOrders);
   } catch (error) {
     // Return error response
     console.error('Error fetching Order:', error);
@@ -33,18 +26,18 @@ router.get('/', async (req, res) => {
 router.post('/', async (req, res) => {
   try {
     // Validate request body
-    const { title, description, location, user_id } = req.body;
-    if (!title || !description || !location || !user_id) {
+    const { user_id, description, location, budget, status } = req.body;
+    if (!user_id || !description || !location || !budget || !status) {
       return res.status(400).json({ message: 'Missing required fields' });
     }
 
     // Create new order object
     const newOrder = new Order({
-      title,
+      user_id,
       description,
       location,
-      user_id,
-      status: 'pending',
+      budget,
+      status
     });
 
     // Save order to database
@@ -60,4 +53,3 @@ router.post('/', async (req, res) => {
 });
 
 module.exports = router;
-// In routes/users.js

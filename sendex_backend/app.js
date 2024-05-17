@@ -23,7 +23,7 @@ mongoose.connect(config.MONGO_URI)
   });
 
 const baseUrl = "/api/login"
-const ordersUrl = "api/orders"
+const ordersUrl = "/api/orders"
 
 // Middleware
 app.use(cors())
