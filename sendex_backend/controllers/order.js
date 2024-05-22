@@ -172,4 +172,22 @@ router.get('/:id', async (req, res) => {
   }
 });
 
+
+//
+router.get('/:location', async (req, res) => {
+// search by location
+try{
+  const order_by_location = await Order.find({location: req.params.location});
+
+
+if (!order_by_location) {
+  return res.status(404).json({ message: 'Order not found' });
+}
+res.status(200).json(order_by_location);
+} catch (error) {
+console.error('Error fetching order:', error);
+res.status(500).json({ message: 'Internal Server Error' });
+}
+
+});
 module.exports = router;

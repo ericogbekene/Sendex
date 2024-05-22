@@ -40,6 +40,7 @@ function Login() {
 
     const handleLogin = () => {
         //try post request to login endpoint
+        //navigate("/dashboard");
 
     }
 
