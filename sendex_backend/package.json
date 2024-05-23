@@ -4,7 +4,7 @@
   "description": "v01 of learning Express framework",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "nodemon index.js"
   },
   "author": "eric ogbekene",
   "license": "ISC",

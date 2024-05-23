@@ -44,7 +44,6 @@ a.info:hover {
 /* BODY */
 .body {
     display: flex;
-    justify-content: space-between;
 }
 
 p.tagline {
@@ -86,16 +85,49 @@ button {
 
 
 
-@media (max-width: 720px) {
+@media (max-width: 1000px) {
     div.home {
         width: 85%;
     }
     nav ul li {
         margin-left: 15px;
     }
+    p.tagline {
+        font-size: 50px;
+        margin-top: 0;
+        color: #444;
+        margin-top: 20px;
+    }
+    img {
+        display: none;
+    }
+    button.home_button {
+        width: 100px;
+        background: #000;
+        color: #fff;
+        margin: 50px 30px 50px 0;
+    }
 }
 
 
+@media (min-width: 720px) and (max-width: 1000px) {
+    p.tagline {
+        font-size: 80px;
+    }
+    button.home_button {
+        width: 100px;
+        background: #000;
+        color: #fff;
+        margin: 50px 30px 50px 0;
+    }
+}
+
+
+@media (max-width: 500px) {
+    a.none {
+        display: none
+    }
+}
 
 
 

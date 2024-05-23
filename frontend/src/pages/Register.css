@@ -26,9 +26,23 @@ a.login_from_register_page {
     font-size: 20px;
 }
 
+input.input_pwd {
+    margin: 0;
+}
+
+p.wrong_pwd {
+    color: red;
+    font-size: 15px;
+    
+}
+
+button.register {
+    display: block;
+}
+
 @media (min-width: 720px) {
     a.login_from_register_page {
         margin: 10px 50px 0 0;
-    color: #4f4f4f;
+        color: #4f4f4f;
     }
 }

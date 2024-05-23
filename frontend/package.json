@@ -5,6 +5,7 @@
   "type": "module",
   "proxy":"http://localhost:3001",
   "scripts": {
+	  "backend": "npm run build && cp -r dist ../sendex_backend",
     "server": "json-server -p3001 --watch db.json",
     "dev": "vite",
     "build": "vite build",

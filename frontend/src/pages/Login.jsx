@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css"
-import loginService from "../services/login";
+import authService from "../services/auth";
 
 function Login() {
     const [newEmail, setEmail] = useState('')
@@ -18,20 +18,23 @@ function Login() {
         setPassword(event.target.value);
     }
 
-    // Store User's login information
-    const addLoginInfo = (event) => {
+    // Store User's login information for validation
+    const addLoginInfo = async (event) => {
         event.preventDefault();
-        const loginObject = {
+        const loginObj = {
             email: newEmail,
             password: newPassword,
         }
 
-        loginService
-        .postLoginInfo(loginObject)
-        .then(returnedInfo => {
+        await authService
+        .login(loginObj)
+        .then(res => {
             setEmail('')
             setPassword('')
+            if (res.status === 200)
+                navigate("/home")
         })
+        .catch(err => alert(err.response.data.msg))
     }
 
     const handleRegister = () => {
@@ -46,7 +49,7 @@ function Login() {
             <form onSubmit={addLoginInfo}>
                 <input type="email" placeholder="Email" value={newEmail} onChange={handleEmailChange} required/>
                 <input type="password" placeholder="Password" value={newPassword} onChange={handlePasswordChange} required/>
-                <button className="button" >LOG IN</button>
+                <button className="button">LOG IN</button>
             </form>
             <p className="forgot_pwd login_text ">Forgot password?</p>
             <div className="create_acct">
