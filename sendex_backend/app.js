@@ -4,7 +4,7 @@ const axios = require('axios')
 const config = require("./utils/config"); //Gives us access to the port number and mongo_uri stored in the .env file
 const express = require('express');
 const app = express()
-const loginRouter = require("./controllers/login")
+const { loginRouter, signupRouter } = require("./controllers/auth")
 const cors = require('cors');
 const mongoose = require('mongoose');
 
@@ -28,7 +28,8 @@ app.use(cors())
 // app.use(express.static('dist'))
 app.use(express.json())
 app.use(express.static("dist"))
-app.use(baseUrl, loginRouter)
+app.use("/api/login", loginRouter)
+app.use("/api/signup", signupRouter)
 
 
 /* Load environment variables

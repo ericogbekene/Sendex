@@ -16,7 +16,7 @@ const Body = () => {
         <>
             <div className="body">
                 <p className="tagline">Got an errand to run? We'll do it for you</p>
-                <img src={Image} />
+                <img class="delivery_guy" src={Image} />
             </div>
             <button className="home_button" onClick={handleLogin}>Login</button>
             <button className="home_button" onClick={handleRegister}>Register</button>
