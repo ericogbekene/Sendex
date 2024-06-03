@@ -9,7 +9,7 @@ import Cta from '../components/cta';
 function Home() {
   return (
     <div className="home">
-        <Navbar />
+        {/*<Navbar />*/}
         <Body />
         <Featured/>
         <Cta/>

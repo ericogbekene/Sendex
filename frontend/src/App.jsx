@@ -5,12 +5,16 @@ import Register from './pages/Register'
 import Dashboard from './pages/Dashboard';
 //import Header from './components/Header';
 import './App.css';
+import Navbar from './components/Navbar';
 
 function App() {
   return (
     <>
         <BrowserRouter>
+            <Navbar />
             <Routes>
+                {/* render Navbar component here so it persists */}
+                {/* accross all screens */}
                 <Route index element={<Home />}/>
                 <Route path="/login" element={<Login />}/>
                 <Route path="/register" element={<Register />}/>

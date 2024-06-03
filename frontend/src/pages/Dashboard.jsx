@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import OrderForm from '../components/OrderForm';
 import ReviewForm from '../components/ReviewForm';
+import Navbar from '../components/Navbar';
+import './Dashboard.css'
 
 const Dashboard = ({ token }) => {
   const [orders, setOrders] = useState([]);

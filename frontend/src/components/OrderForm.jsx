@@ -30,8 +30,8 @@ const OrderForm = ({ token, onOrderCreated }) => {
   return (
     <form onSubmit={handleSubmit}>
       <h2>Create New Errand</h2>
-      <textarea name="description" placeholder="Description" onChange={handleChange} />
       <input type="text" name="location" placeholder="Location" onChange={handleChange} />
+      <textarea name="description" placeholder="Description" onChange={handleChange} />
       <input type="number" name="budget" placeholder="Budget" onChange={handleChange} />
       <button type="submit">Create Order</button>
     </form>

@@ -52,9 +52,8 @@ function Login() {
             <form onSubmit={addLoginInfo}>
                 <input type="email" placeholder="Email" value={newEmail} onChange={handleEmailChange} required/>
                 <input type="password" placeholder="Password" value={newPassword} onChange={handlePasswordChange} required/>
-                <button className="button" >LOG IN</button>
+                <button className="button" onClick={handleLogin}>LOG IN</button>
             </form>
-            <button className="button" onClick={handleLogin}>LOG IN</button>
             <p className="forgot_pwd login_text ">Forgot password?</p>
             <div className="create_acct">
                 <p className="login_text">Don't have an account?</p>

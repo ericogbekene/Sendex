@@ -29,10 +29,10 @@ const ReviewForm = ({ token, onReviewCreated }) => {
 
   return (
     <form onSubmit={handleSubmit}>
-      <h2>Create New Review</h2>
+      <h2 className='text-red '>Create New Review</h2>
       <input type="text" name="order_id" placeholder="Order ID" onChange={handleChange} />
-      <input type="number" name="rating" placeholder="Rating" onChange={handleChange} />
       <textarea name="comment" placeholder="Comment" onChange={handleChange} />
+      <input type="number" name="rating" placeholder="Rating" onChange={handleChange} />
       <button type="submit">Create Review</button>
     </form>
   );

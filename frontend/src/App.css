@@ -44,14 +44,14 @@
     text-decoration: none;
     margin-left: 20px;
   }
-  
+
   main {
     width: 100%;
     max-width: 800px;
     margin: 20px 0;
   }
-  
-  form {
+
+  orm {
     background: #fff;
     padding: 20px;
     border-radius: 8px;
@@ -80,24 +80,25 @@
     cursor: pointer;
   }
   
-  button:hover {
+button:hover {
     background: #218838;
   }
   
-  .dashboard {
+
+.dashboard {
     width: 100%;
   }
   
-  .dashboard h2 {
+.dashboard h2 {
     margin-top: 20px;
   }
   
-  ul {
+.dashboard ul {
     list-style: none;
     padding: 0;
   }
   
-  li {
+.dashboard li {
     background: #fff;
     margin: 10px 0;
     padding: 15px;
@@ -105,7 +106,7 @@
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   }
   
-  li span {
+.dashboard li span {
     display: block;
   }
 
@@ -113,4 +114,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 10px;
+    padding: 10px;
+    gap: 5rem;
 }
