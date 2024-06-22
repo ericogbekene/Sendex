@@ -13,8 +13,6 @@ function App() {
         <BrowserRouter>
             <Navbar />
             <Routes>
-                {/* render Navbar component here so it persists */}
-                {/* accross all screens */}
                 <Route index element={<Home />}/>
                 <Route path="/login" element={<Login />}/>
                 <Route path="/register" element={<Register />}/>

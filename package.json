@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "tailwindcss": "^3.4.3",
-    "babel-plugin": "@babel/plugin-proposal-private-property-in-object"
+    "babel-plugin": "@babel/plugin-proposal-private-property-in-object",
+    "tailwindcss": "^3.4.3"
   },
   "dependencies": {
     "flowbite": "^2.3.0",
